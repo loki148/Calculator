@@ -25,77 +25,77 @@ def smthng(sur):
     x = sur.x
     y = sur.y
     print(x,y)
-    if 10<x<60 and 70<y<120:
+    if 10<x<60 and 70<y<120 or sur.char == '(':
         a = '('
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq(', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq(', fill="#C0C0C0")
-    elif 10<x<60 and 146<y<196:
+    elif 10<x<60 and 146<y<196 or sur.keysym == '7':
         a = '7'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq7', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq7', fill="#C0C0C0")
-    elif 10<x<60 and 222<y<272:
+    elif 10<x<60 and 222<y<272 or sur.keysym == '4':
         a = '4'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq4', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq4', fill="#C0C0C0")
-    elif 10<x<60 and 298<y<348:
+    elif 10<x<60 and 298<y<348 or sur.keysym == '1':
         a = '1'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq1', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq1', fill="#C0C0C0")
-    elif 10<x<60 and 374<y<424:
+    elif 10<x<60 and 374<y<424 or sur.keysym == '0':
         a = '0'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq0', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq0', fill="#C0C0C0")
-    elif 86<x<136 and 70<y<120:
+    elif 86<x<136 and 70<y<120 or sur.char == ')':
         a = ')'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq)', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq)', fill="#C0C0C0")
-    elif 86<x<136 and 146<y<196:
+    elif 86<x<136 and 146<y<196 or sur.char == '8':
         a = '8'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq8', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq8', fill="#C0C0C0")
-    elif 86<x<136 and 222<y<272:
+    elif 86<x<136 and 222<y<272 or sur.char == '5':
         a = '5'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq5', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq5', fill="#C0C0C0")
-    elif 86<x<136 and 298<y<348:
+    elif 86<x<136 and 298<y<348 or sur.char == '2':
         a = '2'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq2', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq2', fill="#C0C0C0")
-    elif 86<x<136 and 374<y<424:
+    elif 86<x<136 and 374<y<424 or sur.char == '+':
         a = '+'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq+', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq+', fill="#C0C0C0")
-    elif 162<x<212 and 70<y<120:
+    elif 162<x<212 and 70<y<120 or sur.char == '!':
         a='!'
         b = math.factorial(int(Txt_formula))
         Txt_formula = ''
@@ -105,63 +105,63 @@ def smthng(sur):
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sqFac', fill="#C0C0C0")
-    elif 162<x<212 and 146<y<196:
+    elif 162<x<212 and 146<y<196 or sur.char == '9':
         a = '9'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq9', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq9', fill="#C0C0C0")
-    elif 162<x<212 and 222<y<272:
+    elif 162<x<212 and 222<y<272 or sur.char == '6':
         a = '6'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq6', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq6', fill="#C0C0C0")
-    elif 162<x<212 and 298<y<348:
+    elif 162<x<212 and 298<y<348 or sur.char == '3':
         a = '3'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq3', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq3', fill="#C0C0C0")
-    elif 162<x<212 and 374<y<424:
+    elif 162<x<212 and 374<y<424 or sur.char == '-':
         a = '-'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq-', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq-', fill="#C0C0C0")
-    elif 238<x<288 and 70<y<120:
+    elif 238<x<288 and 70<y<120 or sur.keysym == 'Delete':
         Txt_formula = ''
         
         canvas.itemconfig('sqDEL', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sqDEL', fill="#C0C0C0")
-    elif 238<x<288 and 146<y<196:
+    elif 238<x<288 and 146<y<196 or sur.char == '.':
         a = '.'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq.', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq.', fill="#C0C0C0")
-    elif 238<x<288 and 222<y<272:
+    elif 238<x<288 and 222<y<272 or sur.char == '/':
         a = '/'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq/', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq/', fill="#C0C0C0")
-    elif 238<x<288 and 298<y<348:
+    elif 238<x<288 and 298<y<348 or sur.char == '*':
         a = '*'
         Txt_formula = Txt_formula + a
         canvas.itemconfig('sq*', fill="gold")
         canvas.update()
         time.sleep(0.16)
         canvas.itemconfig('sq*', fill="#C0C0C0")
-    elif 238<x<288 and 374<y<424:
+    elif 238<x<288 and 374<y<424 or sur.char == '\r' or sur.char == '=':
         Txt_formula
         rslt = eval(Txt_formula)
         canvas.create_text(200,40, text=rslt,font='arial 15', tags='rslt')
@@ -177,5 +177,5 @@ def smthng(sur):
     canvas.create_text(120,25, text=Txt_formula,font='arial 15', tags='form')
 
 canvas.bind_all("<Button-1>", smthng)
-
+canvas.bind_all('<Key>', smthng)
 win.mainloop()
